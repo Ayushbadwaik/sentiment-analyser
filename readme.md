@@ -36,30 +36,13 @@ A colorful, animated web application for real-time **emotion detection** using *
 4. Predicted emotion is mapped to a simpler label and sent back
 5. UI displays the result with color and animation
 
----
-
-## 📁 Directory Structure
-
-sentiments-analyser/
-│
-├── static/
-│ ├── style.css
-│ ├── script.js
-│ └── particles.json
-│
-├── templates/
-│ └── index.html
-│
-├── app.py
-└── README.md
-
----
-
 ## 📥 Installation & Setup
 
 ### 1. Clone the repo
-git clone https://github.com/Ayushbadwaik/sentiment-analyser.git
+git clone https://github.com/Ayushbadwaik/sentiment-analyser.git.
+
 cd Sentiments-Analyser
+
 2. Install Python dependencies:
 pip install flask transformers torch
 
