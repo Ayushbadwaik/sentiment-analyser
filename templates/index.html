@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <div class="container">
+        <h1>Emotion Detector 🤖</h1>
+        <form id="sentiment-form">
+            <input type="text" id="user-input" placeholder="How are you feeling today?" required />
+            <button type="submit">Analyze</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', '{{ url_for("static", filename="particles.json") }}', function() {
+            console.log('Particles loaded!');
+        });
+    </script>
+</body>
+</html>

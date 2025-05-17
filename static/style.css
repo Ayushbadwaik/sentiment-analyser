@@ -1,0 +1,78 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  color: #fff;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0f2027;
+  background-image: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  z-index: -1;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  padding: 12px 20px;
+  width: 300px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  font-size: 1em;
+  margin-bottom: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+  box-shadow: 0 0 10px #6ef3ff;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #6ef3ff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #000;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #41c8e6;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #fff;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
